@@ -1,12 +1,14 @@
 # Notting Hill Carnival Tickets Portal - Bootcamp Final Project
 
-![Project Preview](src/images/project-preview.png) 
+![Project Preview](src/images/project-preview.png)
 
 **Level 3 Web Development Bootcamp Final Project**  
 A responsive ticket booking system demonstrating core web development skills acquired during the course.
 
 ## 🚀 Project Overview
+
 A functional ticket portal for London's Notting Hill Carnival, implementing:
+
 - Real-time price calculations
 - Interactive UI components
 - Form validation
@@ -16,7 +18,9 @@ A functional ticket portal for London's Notting Hill Carnival, implementing:
 **Project Purpose**: Demonstrate competency in fundamental web technologies (HTML, CSS, JavaScript) while creating a practical, user-focused application.
 
 ## 🛠️ Featured Technical Skills
+
 ### Frontend Development
+
 - **DOM Manipulation**: Live updates of pricing elements
 - **Event Handling**: Input/change listeners for user interactions
 - **CSS Layouts**: Flexbox/Grid for responsive design
@@ -24,6 +28,7 @@ A functional ticket portal for London's Notting Hill Carnival, implementing:
 - **Template Literals**: Dynamic content rendering
 
 ### Development Practices
+
 - Clean code organization
 - Semantic HTML structure
 - Mobile-first approach
@@ -31,7 +36,9 @@ A functional ticket portal for London's Notting Hill Carnival, implementing:
 - Version control (Git)
 
 ## 📚 Learning Outcomes
+
 This project demonstrates mastery of key bootcamp concepts:
+
 1. **Interactive Web Applications**: Created dynamic user experiences through event-driven programming
 2. **Data Handling**: Implemented real-time calculations with proper type conversion
 3. **UI/UX Principles**: Designed intuitive controls with immediate feedback
@@ -39,6 +46,7 @@ This project demonstrates mastery of key bootcamp concepts:
 5. **Debugging**: Utilized browser developer tools for testing
 
 ## 🧩 Code Structure Highlights
+
 ```plaintext
 script.js
 ├── adjustTickets()    # Ticket quantity controller
@@ -56,6 +64,7 @@ styles.css
 ```
 
 ## 🚧 Future Enhancements
+
 ```diff
 + Add shopping cart functionality
 + Implement user authentication
@@ -65,6 +74,7 @@ styles.css
 ```
 
 ## 💻 Installation & Usage
+
 ```bash
 # Clone repository
 git clone https://github.com/YananWu729/notting-hill-carnival.git
@@ -74,7 +84,9 @@ open index.html
 ```
 
 ## 📝 Bootcamp Context
+
 Developed as final assessment for **Level 3 Web Development Bootcamp**, fulfilling these requirements:
+
 - ✅ Complex DOM manipulation
 - ✅ Interactive form elements
 - ✅ Responsive layouts
@@ -82,10 +94,10 @@ Developed as final assessment for **Level 3 Web Development Bootcamp**, fulfilli
 - ✅ Professional code documentation
 
 ## 📄 License
+
 [MIT License](LICENSE.md) - Open for educational purposes
 
 ---
 
 **Celebrating Caribbean Culture Through Code** 🇯🇲  
 Proudly created as culmination of Get Set UK's web development program - 03.2025
- 
