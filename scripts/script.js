@@ -55,4 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  function toggleContent(e) {
+    var content = document.getElementById("moreContent-1", "moreContent-2"); 
+    var button = e.target
+
+    if (content.style.display === "none") {
+      content.style.display = "block"; 
+      button.innerText = "Read less"
+  
+      
+    } else {
+      content.style.display = "none"; 
+      button.innerText = "Read more";  
+    }
+  }
+
 

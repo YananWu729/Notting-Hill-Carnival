@@ -35,13 +35,11 @@
       <nav>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
-
           <li><a href="#news">News</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#our-story">Our Story</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#get-tickets">Get Tickets</a></li>
         </ul>
 
@@ -93,10 +91,6 @@
         <script src="./scripts/script.js"></script>
       </section>
 
-      <!-- Merchandise section -->
-      <section id="our-story">
-        <h2>Our Story</h2>
-
         <!-- Cards container -->
         <div class="cards">
           <!-- Card -->
@@ -110,10 +104,6 @@
                 electrifying energy of Notting Hill Carnival with breathtaking
                 costumes, vibrant performances, and a celebration like no other.
               </p>
-
-              <button type="button" onclick="alert('Button clicked.')">
-                Read more
-              </button>
             </div>
           </div>
 
@@ -132,10 +122,6 @@
                 the Notting Hill Carnival with dazzling colors and boundless
                 joy.
               </p>
-
-              <button type="button" onclick="alert('Button clicked.')">
-                Read more
-              </button>
             </div>
           </div>
 
@@ -151,25 +137,39 @@
                 diversity, unity, and the artistic evolution of Caribbean
                 heritage.
               </p>
-
-              <button type="button" onclick="alert('Button clicked.')">
-                Read more
-              </button>
             </div>
           </div>
         </div>
       </section>
+
+      <!--Our Story section -->
+      <section id="our-story">
+        <h2>Our Story</h2>
+        <p>The Notting Hill Carnival, held annually in London, is a vibrant celebration of Caribbean culture and heritage. </p>
+
+          <p id="moreContent-1" style="display: none">
+          Since its inception in 1966, the carnival has grown into one of the world's largest street festivals, attracting millions of attendees each year. 
+          
+          It showcases a rich tapestry of music, dance, and cuisine, reflecting the diverse communities that contribute to its unique atmosphere.</p>
+          <button type="button" onclick="toggleContent(event)">Read more</button>
+
       <!-- About section -->
       <section id="about">
         <h2>About</h2>
         <p>
           Experience the rhythm and soul of the Caribbean at the Notting Hill
-          Carnival. From the mesmerizing beats of steel bands to the colourful
-          parades featuring elaborate costumes, the carnival offers an immersive
-          cultural experience. Whether you're dancing alongside the masqueraders
+          Carnival.
+        </p>
+
+        <p id="moreContent-2" style="display: none">
+          From the mesmerizing beats of steel bands to the colourful parades
+          featuring elaborate costumes, the carnival offers an immersive
+          cultural experience.Whether you're dancing alongside the masqueraders
           or savouring authentic Caribbean dishes, there's something for
           everyone to enjoy.
         </p>
+        <!-- Button that toggles the content visibility -->
+        <button type="button" onclick="toggleContent(event)">Read more</button>
       </section>
 
       <section id="ambassadors">
