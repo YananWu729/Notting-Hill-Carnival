@@ -1,8 +1,7 @@
 const slides = document.querySelectorAll(".carousel-slide img");
 const bullets = document.querySelectorAll(".carousel-bullets .bullet");
 let currentSlide = 0;
- 
- 
+
 function showSlide(n) {
  
   slides.forEach((slide) => slide.classList.remove("active"));
@@ -41,8 +40,8 @@ function autoSlide() {
   nextSlide();
 }
  
-// Setting up an interval to call autoSlide function every 2 seconds
-setInterval(autoSlide, 2000);
+// Setting up an interval to call autoSlide function every 3 seconds
+setInterval(autoSlide, 3000);
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,19 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  function toggleContent(e) {
-    var content = document.getElementById("moreContent-1", "moreContent-2"); 
-    var button = e.target
+
+  function toggleContent(event) {
+    var button = event.target;
+    var content = button.parentElement.getElementsByClassName("moreContent")[0]; 
+
+    console.log(button);
 
     if (content.style.display === "none") {
       content.style.display = "block"; 
       button.innerText = "Read less"
-  
-      
     } else {
       content.style.display = "none"; 
       button.innerText = "Read more";  
     }
   }
+
 
 

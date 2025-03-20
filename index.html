@@ -4,18 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notting Hill Carnival</title>
-    <meta name="description" content="Description of your webpage" />
-    <meta name="keywords" content="Keywords for your webpage" />
-    <meta name="author" content="Your Name" />
+    <meta
+      name="description"
+      content="Official Notting Hill Carnival website - Event information, history, and tickets for Europe's biggest street festival"
+    />
+    <meta
+      name="keywords"
+      content="Notting Hill Carnival, London Festival, Caribbean Culture, Street Parade, Event Tickets"
+    />
+    <meta name="author" content="Yanan Wu" />
 
     <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Your Webpage Title" />
-    <meta property="og:description" content="Description of your webpage" />
+    <meta property="og:title" content="Notting Hill Carnival" />
+    <meta
+      property="og:description"
+      content="Official site for Notting Hill Carnival"
+    />
     <meta property="og:image" content="URL to your webpage's image" />
     <meta property="og:url" content="URL of your webpage" />
 
-    <meta name="twitter:title" content="Your Webpage Title" />
-    <meta name="twitter:description" content="Description of your webpage" />
+    <meta name="twitter:title" content="Notting Hill Carnival" />
+    <meta
+      name="twitter:description"
+      content="Official Notting Hill Carnival website - Event information, history, and tickets for Europe's biggest street festival"
+    />
     <meta name="twitter:image" content="URL to your webpage's image" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -26,21 +38,23 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header id="navbar">
       <div class="logo">
-        <img src="./images/notting-hill-carnival.png" alt="logo" />
+        <img
+          src="./images/notting-hill-carnival.png"
+          alt="Notting Hill Carnival logo"
+        />
       </div>
 
-      <!-- Navigation -->
       <nav>
-        <ul class="menu">
+        <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
           <li><a href="#events">Events</a></li>
+          <li><a href="#news">News</a></li>
           <li><a href="#our-story">Our Story</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Events</a></li>
           <li><a href="#get-tickets">Get Tickets</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="burger-menu">
@@ -50,14 +64,22 @@
         </div>
       </nav>
     </header>
+
     <script src="./scripts/nav.js"></script>
 
     <main>
       <!-- Hero Image -->
       <section class="hero-image">
-        <img src="./images/Hero-image.png" alt="" />
+        <img
+          src="./images/Hero-image.png"
+          alt="Notting Hill Carnival celebration"
+        />
         <div class="hero-text">
-          <h1>Notting Hill Carnival</h1>
+          <h1>
+            Notting <br />
+            Hill <br />
+            Carnival
+          </h1>
 
           <button type="button"><strong>Join us!</strong></button>
         </div>
@@ -66,12 +88,54 @@
       <!-- Events section -->
       <section id="events">
         <h2 class="carousel-title">Events</h2>
+
+        <div class="description-container">
+          <div class="description">
+            <p>
+              A carnival performer moves through the crowd, her striking blue
+              wig contrasting with a barely-there pink strappy costume. Towering
+              feathered wings in electric blue, neon pink, and fiery yellow fan
+              out behind her, creating a dazzling spectacle of movement, energy,
+              and pure festival magic.
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              A radiant woman beams with joy, her golden floral dress shimmering
+              under the lights. Towering emerald-green feathered wings with soft
+              pink tips extend dramatically, framing her like a carnival queen.
+              A lush, flower-crowned headdress completes her enchanting look,
+              capturing the elegance, vibrancy, and exhilaration of the
+              celebration.
+            </p>
+          </div>
+          <div class="description">
+            <p>
+              A fierce carnival performer strides forward in a jewel-encrusted
+              metallic bikini. Her intricate costume gleams with bold blue, red,
+              and silver feathers fanning from her shoulders and elaborate
+              headpiece. Glittering skin and commanding presence transform her
+              into a living embodiment of carnival’s untamed energy.
+            </p>
+          </div>
+        </div>
+
         <div class="carousel-container">
           <!-- Image slides  -->
           <div class="carousel-slide">
-            <img src="./images/slideshow1.webp" alt="Smile" />
-            <img src="./images/slideshow2.webp" alt="Back" />
-            <img src="./images/slideshow3.webp" alt="Focus" />
+            <img
+              src="./images/slideshow1.webp"
+              alt="A smiling lady celebrating at Notting Hill Carnival"
+            />
+
+            <img
+              src="./images/slideshow2.webp"
+              alt="Someone's very colourful back"
+            />
+            <img
+              src="./images/slideshow3.webp"
+              alt="A well dressed-up lady posing for the cameras"
+            />
           </div>
 
           <!-- Left and right arrows -->
@@ -91,8 +155,9 @@
         <script src="./scripts/script.js"></script>
       </section>
 
-        <!-- Cards container -->
-        <div class="cards">
+      <!-- Cards container -->
+      <section id="cards">
+        <div class="cards" id="news">
           <!-- Card -->
           <div class="card">
             <img src="./images/Impact.png" alt="Impact" />
@@ -145,13 +210,21 @@
       <!--Our Story section -->
       <section id="our-story">
         <h2>Our Story</h2>
-        <p>The Notting Hill Carnival, held annually in London, is a vibrant celebration of Caribbean culture and heritage. </p>
-
-          <p id="moreContent-1" style="display: none">
-          Since its inception in 1966, the carnival has grown into one of the world's largest street festivals, attracting millions of attendees each year. 
-          
-          It showcases a rich tapestry of music, dance, and cuisine, reflecting the diverse communities that contribute to its unique atmosphere.</p>
-          <button type="button" onclick="toggleContent(event)">Read more</button>
+        <p>
+          The Notting Hill Carnival, held annually in London, is a vibrant
+          celebration of Caribbean culture and heritage.
+        </p>
+        <div class="moreContent" style="display: none">
+          <p>
+            Since its inception in 1966, the carnival has grown into one of the
+            world's largest street festivals, attracting millions of attendees
+            each year. It showcases a rich tapestry of music, dance, and
+            cuisine, reflecting the diverse communities that contribute to its
+            unique atmosphere.
+          </p>
+        </div>
+        <button type="button" onclick="toggleContent(event)">Read more</button>
+      </section>
 
       <!-- About section -->
       <section id="about">
@@ -161,13 +234,15 @@
           Carnival.
         </p>
 
-        <p id="moreContent-2" style="display: none">
-          From the mesmerizing beats of steel bands to the colourful parades
-          featuring elaborate costumes, the carnival offers an immersive
-          cultural experience.Whether you're dancing alongside the masqueraders
-          or savouring authentic Caribbean dishes, there's something for
-          everyone to enjoy.
-        </p>
+        <div class="moreContent" style="display: none">
+          <p>
+            From the mesmerising beats of steel bands to the colourful parades
+            featuring elaborate costumes, the carnival offers an immersive
+            cultural experience.Whether you're dancing alongside the
+            masqueraders or savouring authentic Caribbean dishes, there's
+            something for everyone to enjoy.
+          </p>
+        </div>
         <!-- Button that toggles the content visibility -->
         <button type="button" onclick="toggleContent(event)">Read more</button>
       </section>
@@ -175,21 +250,47 @@
       <section id="ambassadors">
         <img src="./images/Ambassadors.png" alt="Ambassadors" />
       </section>
+
+      <section id="get-tickets">
+        <h2>Tickets</h2>
+        <p>
+          <strong
+            >Let's meet up at the end of August and make some amazing noise
+            together!</strong
+          >
+        </p>
+        <button type="button">BUY TICKETS</button>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          <strong>
+            Check out the links below to learn more about Carnival and the
+            people involved. You can contact the organisers on
+            <span id="contact-email">office@nhcarnival.org</span>, which may
+            help further.
+          </strong>
+        </p>
+      </section>
     </main>
 
     <footer>
       <section id="logo">
-        <img src="./images/notting-hill-carnival.png" alt="" />
+        <img
+          src="./images/notting-hill-carnival.png"
+          alt="Notting Hill Carnival logo"
+        />
       </section>
       <!-- Social media links & icons -->
       <ul class="social-media-icons">
         <li>
-          <a href="#"
+          <a href="https://www.youtube.com/@nottinghillcarnivalltd.3619"
             ><img src="./images/youtube.png" alt="youtube" class="social-icon"
           /></a>
         </li>
         <li>
-          <a href="#"
+          <a href="https://www.instagram.com/nhcarnivalldn"
             ><img
               src="./images/instagram.png"
               alt="instagram"
@@ -197,7 +298,7 @@
           /></a>
         </li>
         <li>
-          <a href="#"
+          <a href="https://www.facebook.com/NHCarnivalLDN/"
             ><img
               src="./images/facebook-app-symbol.png"
               alt="facebook"
@@ -206,18 +307,18 @@
         </li>
 
         <li>
-          <a href="#"
+          <a href="https://x.com/NHCarnivalLDN"
             ><img src="./images/twitter copy.png" alt="x" class="social-icon"
           /></a>
         </li>
         <li>
-          <a href="#"
+          <a href="https://carnival.withspotify.com/"
             ><img src="./images/spotify.png" alt="spotify" class="social-icon"
           /></a>
         </li>
         <li></li>
         <li>
-          <a href="#"
+          <a href="https://www.tiktok.com/@nhcarnivalldn?lang=en"
             ><img src="./images/tik-tok.png" alt="tik-tok" class="social-icon"
           /></a>
         </li>
