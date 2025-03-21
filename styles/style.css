@@ -1,7 +1,7 @@
 /* Root & Variables */
 :root {
     --color-bg: rgba(26, 167, 192, 0.45);
-    --color-bg-text: rgba(255, 232, 183, 1);
+    --color-bg-text: rgba(253, 228, 174, 0.8);
     --color-shadow-text: rgba(255, 232, 183, 0.55);
     --color-header-links: rgba(177, 47, 39, 1);
     --font-text: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -131,13 +131,6 @@ header {
     margin: 0.6em;
    
 }
-/* .burger-menu > div {
-  background-color: var(--color-bg);
-  width: 18px;
-  height: 4px;
-  margin: 2px 3px;
-  transition: all 500ms ease;
-} */
 
 .burger-menu .line {
     width: 100%;
@@ -199,7 +192,7 @@ section {
 
 .hero-text {
     position: absolute;
-    top: 26%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
@@ -227,6 +220,8 @@ section {
 /* Activates flexbox on image slides. */
 .carousel-slide {
   display: flex;
+  max-width: 430px;
+  margin: auto;
 }
 
 /* Defines sizing of images. */
@@ -284,10 +279,21 @@ section {
   cursor: pointer;
 }
 
-/* Setting up the colour of the active carousel bullets. You might want to
-  change it according to your brand colour pallet.*/
+/* Setting up the colour of the active carousel bullets.*/
 .carousel-bullets .bullet.active {
   background-color: var(--color-bg);
+}
+
+/* Events descriptions */
+.description-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+.description1, .description2, .description3 {
+  background-color: var(--color-bg);
+  border-radius: 10px;
 }
 
  /* Section News  */
@@ -354,11 +360,15 @@ section {
   margin: 10rem 0;
 }
 
-
+/* Tickets section  */
 #get-tickets {
   margin: 10rem 1.5rem;
   background-color: var(--color-bg);
   border-radius: 10px;
+}
+#get-tickets a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--color-header-links);
 }
 
 #contact {
@@ -408,7 +418,7 @@ section {
   }
 
   /* 1.2 For Tablet & desktop */
-  @media (min-width: 48rem) {
+  @media (min-width: 60rem) {
     nav {
       display: flex;
     }
