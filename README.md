@@ -1,6 +1,6 @@
 # Notting Hill Carnival Tickets Portal - Bootcamp Final Project
 
-![Project Preview](images/Project-preview.png) 
+![Project Preview](src/images/Project-preview.png) 
 
 **Level 3 Web Development Bootcamp Final Project**  
 A responsive ticket booking system demonstrating core web development skills acquired during the course.
