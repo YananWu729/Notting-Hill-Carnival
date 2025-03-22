@@ -184,6 +184,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-right: 2rem;
     /* height: 100vh; */
     width: 100%;
     box-shadow: 0 1px 1px var(--color-secondary);
@@ -294,6 +295,8 @@ section {
 .description1, .description2, .description3 {
   background-color: var(--color-bg);
   border-radius: 10px;
+  max-width: 35rem;
+  max-height: 26rem;
 }
 
  /* Section News  */
