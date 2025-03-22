@@ -1,0 +1,454 @@
+/* Root & Variables */
+:root {
+    --color-bg: rgba(26, 167, 192, 0.45);
+    --color-bg-text: rgba(253, 228, 174, 0.8);
+    --color-shadow-text: rgba(255, 232, 183, 0.55);
+    --color-header-links: rgba(177, 47, 39, 1);
+    --font-text: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+}
+ 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+ 
+html {
+    font-size: 62.5%;
+}
+ 
+body {
+    height: 100vh;
+    width: 100vw;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    background-color: rgba(254, 241, 177, 0.5);
+   
+}
+ 
+img, picture {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+ 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.1rem;
+    padding: 2rem 0;
+}
+ 
+h2 {
+    font-size: 3.2rem;
+}
+ 
+h3 {
+    font-size: 2.2rem;
+}
+ 
+p, a, li {
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 0.2rem 0;
+}
+
+
+button{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: var(--color-bg-text);
+    color: black;
+    border: 0;
+    border-radius: 13.5px;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+
+button:hover {
+    background-color: var(--color-bg);
+    color: var(--color-secondary);
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-bg);
+}
+
+.logo img {
+  height: 50px;  
+}
+
+#navbar > nav > ul {
+    display: none;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    gap: 4px;
+    position: relative;
+    width: 95%;
+}
+
+#navbar > nav > ul li {
+    text-align: right;
+}
+
+#navbar > nav > ul a {
+    color: var(--color-header-links);
+    font-weight: bolder;
+    background-color: var(--color-bg-text);
+    border-radius: 13.5px;
+    display: block;
+    padding: 1rem 3rem;
+    
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 1em;
+    top: 0;
+    margin: 0.6em;
+   
+}
+
+.burger-menu .line {
+    width: 100%;
+    height: 0.35rem;
+    background-color: white;
+      
+}
+nav:has(>.show-menu) > .burger-menu > div:nth-child(2) {
+  opacity: 0;
+}
+
+nav:has(>.show-menu) > .burger-menu > div:first-child {
+  transform: rotate(45deg);
+  top: 6px;
+  position: relative;
+}
+
+nav:has(>.show-menu) > .burger-menu > div:last-child {
+  transform: rotate(-45deg);
+  top: -7px;
+  position: relative;
+}
+
+#navbar > nav > ul.show-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+/* Hero image  */
+.hero-image {
+    background-image: url("../images/hero-image.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-right: 2rem;
+    /* height: 100vh; */
+    width: 100%;
+    box-shadow: 0 1px 1px var(--color-secondary);
+    z-index: -1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.hero-text h1 {
+  background-color: rgba(255, 232, 183, 0.5);
+  border-radius: 10px;
+  font-size: 2.9rem;
+}
+
+
+/* Section Event */
+#events {
+  margin-bottom: 6rem;
+}
+.description-container {
+  display: flex;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+/* Activates flexbox on image slides. */
+.carousel-slide {
+  display: flex;
+  max-width: 430px;
+  margin: auto;
+}
+
+/* Defines sizing of images. */
+.carousel-slide img {
+  width: 100%;
+  display: none;
+}
+
+/* Identifies how the images will be displayed when they are active. */
+.carousel-slide img.active {
+  display: block;
+}
+
+/* Set the positioning of the left and right arrow carousel navigation.  */
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Defines the color of the carousel arrows navigation. The color of the arrows
+  should be in the contrast with the images to make them visible. */
+.carousel-navigation .prev,
+.next {
+  color: rgb(255, 255, 255);
+}
+
+/* Alignments and coloring of the left and right arrow navigation. */
+.carousel-navigation button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* The carousel bullets points alignment. */
+.carousel-bullets {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Setting up the colour of the non-active carousel bullets. You might want to
+  change it according to your brand colour pallet.*/
+.carousel-bullets .bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f5ebeb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Setting up the colour of the active carousel bullets.*/
+.carousel-bullets .bullet.active {
+  background-color: var(--color-bg);
+}
+
+/* Events descriptions */
+.description-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+.description1, .description2, .description3 {
+  background-color: var(--color-bg);
+  border-radius: 10px;
+  max-width: 35rem;
+  max-height: 26rem;
+}
+
+ /* Section News  */
+ .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+
+.card {
+  max-width: 30rem;
+  border-radius: 2rem;
+  background-color: var(--color-bg-text);
+  box-shadow: 0rem 5rem 5rem var(--color-shadow-text);
+  margin: 2rem;
+}
+
+.card img {
+  border-radius: 2rem;
+}
+
+.info {
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
+/* Section Our story */
+#our-story {
+  display: block;
+  min-height: 8rem; 
+  /* width: 100%; */
+  background-image: url(../images/Partners.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 5rem 1.5rem;
+  border-radius: 20px;
+}
+
+
+/* Section About  */
+#about {
+  display: block;
+  min-height: 8rem; 
+  /* width: 100%; */
+  background-image: url(../images/our-mission.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 5rem 1.5rem;
+  border-radius: 20px;
+}
+#about p {
+    margin-bottom: 2rem;
+}
+
+#ambassadors {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
+}
+
+/* Tickets section  */
+#get-tickets {
+  margin: 10rem 1.5rem;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+}
+#get-tickets a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--color-header-links);
+}
+
+#contact {
+  margin: 10rem 1.5rem;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+}
+#contact #contact-email {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: var(--color-header-links);
+  
+}
+ 
+
+ footer {
+    align-self: stretch;
+    text-align: center;
+    box-shadow: 0 -5rem 3rem var(--color-shadow);
+    margin-top: 3rem;
+    padding: 1rem 0 2rem 0;
+    background-color: var(--color-bg);
+  }
+
+  footer #logo img {
+    height: 70px;
+    display: inline-flex;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  .social-icon {
+    height: 2rem;
+    min-height: 2rem;
+    filter: invert(100%);
+    margin: 1rem;
+  }
+
+  .rights {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  /* 1.2 For Tablet & desktop */
+  @media (min-width: 60rem) {
+    nav {
+      display: flex;
+    }
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1em;
+    }
+    #navbar > nav > ul {
+      display: flex;
+      position: static;
+      width: auto;
+    }
+    .hero-text {
+      padding-bottom: 3rem;
+      top: 65%;
+    }
+    .hero-text h1 {
+      font-size: 7rem;
+    }
+    #navbar > nav > ul li {
+      text-align: left;
+    }
+    .burger-menu {
+      display: none;
+    }
+    #contact {
+      width: 620px;
+    }
+  }
