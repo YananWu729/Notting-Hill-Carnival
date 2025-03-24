@@ -29,7 +29,7 @@ A functional ticket portal for London's Notting Hill Carnival, implementing:
 
 ### Development Practices
 
-- Clean code organization
+- Clean code organisation
 - Semantic HTML structure
 - Mobile-first approach
 - Cross-browser compatibility
@@ -67,9 +67,9 @@ styles.css
 
 ```diff
 + Add shopping cart functionality
++ Add travel and weather sections
 + Implement user authentication
-+ Integrate payment gateway
-+ Add ticket type images
++ Add ticket type cards
 + Create admin dashboard
 ```
 
