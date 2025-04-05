@@ -227,8 +227,9 @@ section {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  right: 93%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -55px;
   padding: 16px;
   color: white;
   font-weight: bold;
