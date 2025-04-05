@@ -85,66 +85,56 @@
         </div>
       </section>
 
-      <!-- Events section -->
-      <section id="events">
-        <h2 class="carousel-title">Events</h2>
-
-        <div class="carousel-container">
-          <!-- Image slides  -->
-          <div class="carousel-slide">
-            <img
-              src="./images/slideshow1.webp"
-              alt="A smiling lady celebrating at Notting Hill Carnival"
-            />
-
-            <img
-              src="./images/slideshow2.webp"
-              alt="Someone's very colourful back"
-            />
-
-            <img
-              src="./images/slideshow3.webp"
-              alt="A well dressed-up lady posing for the cameras"
-            />
-          </div>
-
-          <!-- Left and right arrows -->
-          <div class="carousel-navigation">
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-          </div>
-
-          <!-- Bullet points indicators -->
-          <div class="carousel-bullets">
-            <span class="bullet"></span>
-            <span class="bullet"></span>
-            <span class="bullet"></span>
-          </div>
-        </div>
-        <div class="description-container">
-          <div class="description1">
+      <section id="our-events">
+        <div class="events"><h2>Our Events</h2></div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+        <!-- Full-width images with title and caption text -->
+        <div class="mySlides fade">
+        <img src="./images/slideshow1.webp" alt="A smiling lady celebrating at Notting Hill Carnival" style="width:100%">
+          <div class="text">
+            <h3>A smiling lady celebrating at Notting Hill Carnival</h3>
             <p>
-              A carnival dancer stands out in the crowd, her bright blue wig and
-              soft pink outfit sparkling as she dances.
-            </p>
-          </div>
-          <div class="description2">
-            <p>
-              The woman in the glittery gold dress seems to glow like sunshine.
-              Her wings, rainforest-green with hints of pink, spread out like a
-              magical invitation.
-            </p>
-          </div>
-          <div class="description3">
-            <p>
-              Every move she makes shines—in her sparkling outfit, the bold
-              feathers swaying on her shoulders, and her fearless smile.
+              A carnival dancer stands out in the crowd, her bright blue wig and soft pink outfit sparkling as she dances.
             </p>
           </div>
         </div>
-        <!-- External JS file for the carousel -->
-        <script src="./scripts/script.js"></script>
+  
+        <div class="mySlides fade">
+        <img src="./images/slideshow2.webp" alt="Someone's very colourful back" style="width:100%">
+        <div class="text">
+          <h3>Someone's very colourful back</h3>
+          <p>
+            The woman in the glittery gold dress seems to glow like sunshine. Her wings, rainforest-green with hints of pink, spread out like a magical invitation.
+          </p>
+        </div>
+        </div>
+  
+        <div class="mySlides fade">
+        <img src="./images/slideshow3.webp" alt="A well dressed-up lady posing for the cameras" style="width:100%">
+        <div class="text">
+          <h3>A well dressed-up lady posing for the cameras</h3>
+          <p>
+            Every move she makes shines—in her sparkling outfit, the bold feathers swaying on her shoulders, and her fearless smile.
+          </p>
+        </div>
+        </div>
+        <!-- </div> -->
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div> 
       </section>
+
 
       <!-- Cards container -->
       <section id="cards">
@@ -197,6 +187,7 @@
           </div>
         </div>
       </section>
+      
 
       <!--Our Story section -->
       <section id="our-story">
@@ -316,5 +307,6 @@
       <!-- Copyrights -->
       <p class="rights">&copy; Notting Hill Carnival</p>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

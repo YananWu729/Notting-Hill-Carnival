@@ -1,47 +1,32 @@
-const slides = document.querySelectorAll(".carousel-slide img");
-const bullets = document.querySelectorAll(".carousel-bullets .bullet");
-let currentSlide = 0;
-
-function showSlide(n) {
- 
-  slides.forEach((slide) => slide.classList.remove("active"));
-  bullets.forEach((bullet) => bullet.classList.remove("active"));
- 
-  if (n >= slides.length) {
-    currentSlide = 0;
-  } else if (n < 0) {
-    currentSlide = slides.length - 1;
-  } else {
-    currentSlide = n;
+let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
- 
-  slides[currentSlide].classList.add("active");
-  bullets[currentSlide].classList.add("active");
-}
- 
-function nextSlide() {
-  showSlide(currentSlide + 1);
-}
- 
-function prevSlide() {
-  showSlide(currentSlide - 1);
-}
- 
-document.querySelector(".next").addEventListener("click", nextSlide);
-document.querySelector(".prev").addEventListener("click", prevSlide);
- 
-bullets.forEach((bullet, index) => {
-  bullet.addEventListener("click", () => {
-    showSlide(index);
-  });
-});
- 
-function autoSlide() {
-  nextSlide();
-}
- 
-// Setting up an interval to call autoSlide function every 3 seconds
-setInterval(autoSlide, 3000);
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  } 
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
       button.innerText = "Read more";  
     }
   }
+  
+  
+
 
 
 

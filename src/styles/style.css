@@ -204,100 +204,96 @@ section {
   font-size: 2.9rem;
 }
 
-
-/* Section Event */
-#events {
-  margin-bottom: 6rem;
-}
-.description-container {
+.events {
   display: flex;
-}
-.carousel-container {
+  justify-content: center;
+  margin: auto;
+}  
+
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 550px;
   position: relative;
-  width: 100%;
   margin: auto;
 }
 
-/* Activates flexbox on image slides. */
-.carousel-slide {
-  display: flex;
-  max-width: 430px;
-  margin: auto;
-}
-
-/* Defines sizing of images. */
-.carousel-slide img {
-  width: 100%;
+/* Hide the images by default */
+.mySlides {
   display: none;
 }
 
-/* Identifies how the images will be displayed when they are active. */
-.carousel-slide img.active {
-  display: block;
-}
-
-/* Set the positioning of the left and right arrow carousel navigation.  */
-.carousel-navigation {
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-/* Defines the color of the carousel arrows navigation. The color of the arrows
-  should be in the contrast with the images to make them visible. */
-.carousel-navigation .prev,
+/* Position the "next button" to the right */
 .next {
-  color: rgb(255, 255, 255);
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-/* Alignments and coloring of the left and right arrow navigation. */
-.carousel-navigation button {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  outline: none;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-/* The carousel bullets points alignment. */
-.carousel-bullets {
+/* Caption text */
+.text {
+  color: #14021b;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  margin-top: 10px;
 }
 
-/* Setting up the colour of the non-active carousel bullets. You might want to
-  change it according to your brand colour pallet.*/
-.carousel-bullets .bullet {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #f5ebeb;
-  border-radius: 50%;
-  margin: 0 5px;
+.text h3 {
+  font-size: 20px;
+  padding-top: 1rem;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-/* Setting up the colour of the active carousel bullets.*/
-.carousel-bullets .bullet.active {
-  background-color: var(--color-bg);
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-/* Events descriptions */
-.description-container {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
-  gap: 3rem;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-.description1, .description2, .description3 {
-  background-color: var(--color-bg);
-  border-radius: 10px;
-  max-width: 35rem;
-  max-height: 26rem;
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
+
 
  /* Section News  */
  .cards {
