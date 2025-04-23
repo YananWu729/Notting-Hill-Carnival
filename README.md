@@ -3,7 +3,7 @@
 ![Project Preview](docs/project-preview.png)
 
 **Level 3 Web Development Bootcamp Final Project**  
-A responsive ticket booking system demonstrating core web development skills acquired during the course.
+A responsive ticket booking system demonstrating core web development skills gained during the course.
 
 ## 🚀 Project Overview
 
